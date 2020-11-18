@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Responsive Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+	<div class="box grad-yellow">
+		<h1 id="title" class="text-center">Survey Form</h1>
+		<p id="description" class="text-center">Thank you for taking the time to help us.</p>
+		<form id="survey-form">
+			<label id="name-label" for="name">Name</label>
+     		<input type="text" name="name" id="name" placeholder="Enter your name" required/>
+     		<label id="email-label" for="email">Email</label>
+     		<input type="email" name="email" id="email" placeholder="Enter your Email" required/>
+     		<label id="number-label" for="age">Age (Optional)</label>
+     		<input type="number" name="age" id="number" min="10" max="99" placeholder="Enter your Age" required/>
+     		<p>Which Option Best Suites You ?</p>
+     		<select id="dropdown" name="role" required>
+			    <option disabled selected value>Select current role</option>
+			    <option value="student">Student</option>
+			    <option value="job">Full Time Job</option>
+			    <option value="learner">Full Time Learner</option>
+			    <option value="preferNo">Prefer not to say</option>
+			    <option value="other">Other</option>
+			 </select>
+			 <p>Would You Suggest This Form To Others ?</p>
+			 <input class="input-radio" name="user-recommend" value="definitely" type="radio" checked/>Definitely</label><br>
+			 <input class="input-radio" name="user-recommend" value="maybe" type="radio"/>Maybe</label><br>
+			 <input class="input-radio" name="user-recommend" value="not-sure" type="radio"/>Not Sure</label><br>
+			 <p>Your Favourite Feature ?</p>
+			 <select id="most-like" name="mostLike" required>
+			    <option disabled selected value>Select an option</option>
+			    <option value="challenges">Challenges</option>
+			    <option value="projects">Projects</option>
+			    <option value="community">Community</option>
+			    <option value="openSource">Open Source</option>
+			 </select>
+			 <p>Your Favourite Sports</p>
+			 <input name="sport" value="football" type="checkbox" class="input-checkbox"/>Football<br>
+			 <input name="sport" value="tennis" type="checkbox" class="input-checkbox"/>Tennis<br>
+			 <input name="sport" value="basketball" type="checkbox" class="input-checkbox"/>Basketball<br>
+			 <input name="sport" value="cricket" type="checkbox" class="input-checkbox"/>Cricket<br>
+			 <input name="sport" value="golf" type="checkbox" class="input-checkbox"/>Golf<br>
+      		<p>Any comments or suggestions?</p>
+      		<textarea id="comments" name="comment" placeholder="Enter your comment here..."></textarea>
+      		<button type="submit" id="submit">Submit</button>
+		</form>
+	</div>
+</body>
+</html>
